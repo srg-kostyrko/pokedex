@@ -1,7 +1,7 @@
 {
   "name": "pokedex",
-  "version": "0.0.0",
-  "description": "Small description for pokedex goes here",
+  "version": "1.0.0",
+  "description": "Test task for kottans.org",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -12,11 +12,14 @@
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srg-kostyrko/pokedex.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Sergey Kostyrko",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
