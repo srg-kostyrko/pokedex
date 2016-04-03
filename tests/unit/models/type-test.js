@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('pokemon-type', 'Unit | Model | pokemon type', {
+moduleForModel('type', 'Unit | Model | type', {
   // Specify the other units that are required for this test.
   needs: []
 });

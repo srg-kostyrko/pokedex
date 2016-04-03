@@ -1,1 +1,46 @@
-{{yield}}
+<div class="ui raised segment">
+  <img class="ui centered image" src="{{pokemon.image}}">
+  <h4 class="ui header">{{pokemon.name}} #{{pokemon.fullId}}</h4>
+  <table class="ui celled striped fixed table">
+    <tbody>
+      <tr>
+        <td>Type</td>
+        <td>
+          {{pokemon.typesString}}
+        </td>
+      </tr>
+      <tr>
+        <td>Attack</td>
+        <td>{{pokemon.attack}}</td>
+      </tr>
+      <tr>
+        <td>Deffence</td>
+        <td>{{pokemon.defense}}</td>
+      </tr>
+      <tr>
+        <td>HP</td>
+        <td>{{pokemon.hp}}</td>
+      </tr>
+      <tr>
+        <td>SP attack</td>
+        <td>{{pokemon.sp_atk}}</td>
+      </tr>
+      <tr>
+        <td>SP deffence</td>
+        <td>{{pokemon.sp_def}}</td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td>{{pokemon.speed}}</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td>{{pokemon.weight}}</td>
+      </tr>
+      <tr>
+        <td>Total moves</td>
+        <td>{{pokemon.moves.length}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

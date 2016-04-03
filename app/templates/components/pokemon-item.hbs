@@ -1,1 +1,9 @@
-{{yield}}
+<div class="image">
+  {{lazy-image class='ui image pokemon-image' url=pokemon.image}}
+</div>
+<div class="content">
+  <div class="header">{{ pokemon.name }}</div>
+  {{#each pokemon.types as |type|}}
+    <div class="ui {{type.color}} horizontal label">{{type.name}}</div>
+  {{/each}}
+</div>

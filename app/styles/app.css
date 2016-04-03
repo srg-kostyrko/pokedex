@@ -1,0 +1,29 @@
+.pokemon-image {
+  width: 120px !important;
+}
+div.pokemon-image {
+  left: 50%;
+  margin-left: -60px;
+}
+.label.cadetblue {
+  background-color: cadetblue;
+}
+.label.deepskyblue {
+  background-color: deepskyblue;
+}
+.label.lightgrey {
+  background-color: lightgrey;
+}
+.label.white {
+  background-color: white;
+}
+.label.white {
+  background-color: cyan;
+}
+.lazy-image-container {
+  min-height: 120px !important;
+}
+.lazy-image-placeholder {
+  margin-top: -20px;
+  margin-right: -20px;
+}

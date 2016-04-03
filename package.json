@@ -37,8 +37,10 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.4.2",
     "ember-export-application-global": "^1.0.5",
+    "ember-lazy-image": "0.0.15",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "semantic-ui-ember": "0.9.3"
   }
 }

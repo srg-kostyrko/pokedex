@@ -1,1 +1,32 @@
-{{outlet}}
+<div class="ui grid stackable mobile reversed container">
+  <div class="ten wide column">
+    <div class="ui segment">
+      {{#ui-dropdown class="fluid multiple search selection" onChange=(action 'updateSelected')}}
+        <input type="hidden" value={{types}} />
+        <div class="default text">Filter by type</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          {{#each model.types as |type|}}
+            <div class="item" data-value="{{type.id}}">{{type.name}}</div>
+          {{/each}}
+        </div>
+      {{/ui-dropdown}}
+    </div>
+    <div class="ui three stackable link cards">
+      {{#each filteredPokemons as |pokemon|}}
+        {{pokemon-item pokemon=pokemon onClick=(action "viewPokemon")}}
+      {{else}}
+        <div class="ui centered card">
+          <div class="content">
+            No pokemons are matching criteria.
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <br/>
+    <button class="fluid ui blue button" {{action "showMore"}}>Load more</button>
+  </div>
+  <div class="six wide column">
+    {{outlet}}
+  </div>
+</div>
